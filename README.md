@@ -76,6 +76,14 @@ To trigger a build a Travis-CI token is required.
 This can be found on https://travis-ci.org/profile/ page.
 Click on the eye icon next to 'Token' to get your token.
 
+###  Generate Travis-CI token
+```
+docker run --rm -ti ruby:2.1.3 bash
+gem install travis -v 1.8.2 --no-rdoc --no-ri
+travis login --org
+travis token
+```
+
 ## Listen for Github webhook using IFTTT recipe and trigger Travis-CI build
 
 Goto https://ifttt.com/myrecipes/personal/new
