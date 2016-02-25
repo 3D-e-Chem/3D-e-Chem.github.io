@@ -1,38 +1,26 @@
-<!doctype html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="chrome=1">
-    <title>3d-e-chem.GitHub.io by 3D-e-Chem</title>
+---
+layout: default
+---
 
-    <link rel="stylesheet" href="stylesheets/styles.css">
-    <link rel="stylesheet" href="stylesheets/github-light.css">
-    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
-    <!--[if lt IE 9]>
-    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-    <![endif]-->
-  </head>
-  <body>
-    <div class="wrapper">
-      <header>
-        <h1>3d-e-chem.GitHub.io</h1>
-        <p></p>
+<div class="home">
 
+<p>This project will develop technologies to improve the integration of ligand and protein data for structure-based prediction of protein-ligand selectivity and polypharmacology.</p>
 
-        <p class="view"><a href="https://github.com/3D-e-Chem">View My GitHub Profile</a></p>
+<p>The project will use <a href="http://www.knime.org">Knime Analytics Platform</a> to integrate</p>
 
-      </header>
-      <section>
-        <h1>
-<a id="3d-e-chem-project" class="anchor" href="#3d-e-chem-project" aria-hidden="true"><span class="octicon octicon-link"></span></a>3D-e-Chem project</h1>
+<p>Use <a href="/updates">https://3d-e-chem.github.io/updates</a> as update site to install 3D-e-Chem Knime plugins.</p>
 
-<p><a href="/updates">Knime update site</a></p>
-      </section>
-      <footer>
-        <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></small></p>
-      </footer>
-    </div>
-    <script src="javascripts/scale.fix.js"></script>
+<h2>Repositories</h2>
+<div class="repositories">
+{% for repo in site.repos %}
+<div class="repo-card">
+    <a href="{{ repo.homepage }}">
+        <h2 class="mdl-card__title-text">{{ repo.title }}</h2>
+        <h3>{{ repo.language }}</h3>
+        <p>{{ repo.content }}</p>
+    </a>
+</div>
+{% endfor %}
+</div>
+</div>
 
-  </body>
-</html>
