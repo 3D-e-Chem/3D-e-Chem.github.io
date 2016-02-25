@@ -2,6 +2,38 @@
 
 Website listing the software used/made/changed in this NLeSC project.
 
+# Generate files
+
+Install requirements with:
+```
+pip install -r utils/requirements.txt
+```
+
+## Config
+
+```
+python utils/generate.py config <organization name>
+```
+
+This will use the Github API to fetch information about the organization and write the `_config.yml` file. The `_config.yml` must be edited to complete the configuration.
+
+## Repositories
+
+```
+python utils/generate.py repos <organization name>
+```
+
+This will generate a Markdown file in `_repos` directory for each public repo found in the organization.
+
+# Local hosting
+
+```
+docker run --rm --volume=$(pwd):/srv/jekyll -i -t  -p 127.0.0.1:4000:4000 jekyll/jekyll:pages
+```
+
+
+# Automatic update setup
+
 Inspiration for the website is http://twitter.github.io/ or http://hadley.github.io/.
 Problem with those websites is they use the Github API anonymously.  Which is limited to 60 requests an hour.
 

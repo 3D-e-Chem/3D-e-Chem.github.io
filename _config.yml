@@ -1,0 +1,25 @@
+baseurl: ''
+created_at: 2015-10-02 12:46:14+00:00
+description: Software repositories for 3D-e-Chem project of Netherlands eScience Center
+excludes:
+- README.md
+- utils
+keep_files:
+- assets
+markdown: kramdown
+partners:
+- logo_url: https://www.esciencecenter.nl/img/pressroom/ESCIENCE_logo_C_nl_cyanblack.jpg
+  url: https://www.esciencecenter.nl
+- logo_url: <FIXME AND OPTIONALLY REPEATME>
+  url: <FIXME AND OPTIONALLY REPEATME>
+slug: 3D-e-Chem
+title: 3D-e-Chem NLeSC project
+urls:
+  avatar: https://avatars.githubusercontent.com/u/14940717?v=3
+  nlesc: https://www.esciencecenter.nl/project/3d-e-chem
+  organization: https://github.com/3D-e-Chem
+  repos: https://api.github.com/orgs/3D-e-Chem/repos
+keep_files:
+  - updates
+collections:
+  - repos
