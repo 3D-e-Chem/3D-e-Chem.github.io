@@ -31,13 +31,12 @@ This will generate a Markdown file in `_repos` directory for each public repo fo
 docker run --rm --volume=$(pwd):/srv/jekyll -i -t  -p 127.0.0.1:4000:4000 jekyll/jekyll:pages
 ```
 
-
 # Automatic update setup
 
 Inspiration for the website is http://twitter.github.io/ or http://hadley.github.io/.
 Problem with those websites is they use the Github API anonymously.  Which is limited to 60 requests an hour.
 
-Solution to this is:
+Solution 1 to this is:
 
 1. Use Github webhooks in repositories to trigger when something changes.
 2. Webhook urls are listened on a IFTT recipe using it's Maker channel (https://github.com/captn3m0/ifttt-webhook)
@@ -45,6 +44,24 @@ Solution to this is:
 4. The Travis-CI build will fetch data using Github API and write/commit/push the results as a json file.
 5. Github Pages will host this new json file.
 6. Site visitors will see up 2 date data.
+
+Solution 2 to this is:
+
+Nightly builds of organization website.
+
+1. Create IFTTT recipe which runs once daily.
+2. The IFTT recipy triggers a Circle-CI build (https://circleci.com/docs/nightly-builds)
+3. The Circle-CI build will fetch data using Github API and write/commit/push the results as a json file.
+4. Github Pages will host this new json file.
+5. Site visitors will see up 2 date data.
+
+Pros versus solution 1:
+* Unable to trigger travis-CI build from IFTTT, because unable to pass auth header
+* Setting up all the webhooks is a lot of work
+Cons versus solution 1:
+* Wait a day for stats to update
+
+# Automatic update setup solution 1
 
 ## Setup IFFTTT Maker endpoint
 
