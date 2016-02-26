@@ -1,3 +1,20 @@
+<!-- TOC depthFrom:1 depthTo:6 withLinks:1 updateOnSave:1 orderedList:0 -->
+
+- [Project software site](#project-software-site)
+- [Generate files](#generate-files)
+	- [Config](#config)
+	- [Repositories](#repositories)
+- [Local hosting](#local-hosting)
+- [Automatic update setup](#automatic-update-setup)
+	- [Setup Travis-CI](#setup-travis-ci)
+	- [Github deploy key to allow Travis-CI to git push](#github-deploy-key-to-allow-travis-ci-to-git-push)
+		- [Add deploy key to Github](#add-deploy-key-to-github)
+		- [Add encrypted deploy key to repo](#add-encrypted-deploy-key-to-repo)
+	- [Manually trigger a build](#manually-trigger-a-build)
+	- [Register repo on https://nightli.es/](#register-repo-on-httpsnightlies)
+
+<!-- /TOC -->
+
 # Project software site
 
 Website listing the software used/made/changed in this NLeSC project.
