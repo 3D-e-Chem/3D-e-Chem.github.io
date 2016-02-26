@@ -8,17 +8,20 @@ keep_files:
 - assets
 markdown: kramdown
 partners:
-- logo_url: https://www.esciencecenter.nl/img/pressroom/ESCIENCE_logo_C_nl_cyanblack.jpg
-  url: https://www.esciencecenter.nl
-- logo_url: <FIXME AND OPTIONALLY REPEATME>
-  url: <FIXME AND OPTIONALLY REPEATME>
+  - logo_url: https://www.esciencecenter.nl/img/pressroom/ESCIENCE_logo_C_nl_cyanblack.jpg
+    url: https://www.esciencecenter.nl
+# - logo_url: <FIXME AND OPTIONALLY REPEATME>
+#   url: <FIXME AND OPTIONALLY REPEATME>
+  - url: https://www.vu.nl
+    logo_url: https://www.esciencecenter.nl/img/partners/VUlogo_EN_Wit_HR_RGB_tcm9-201385.png
+  - url: https://www.radboudumc.nl
+    logo_url: https://www.esciencecenter.nl/img/partners/ru-eng-pms1805-a4.jpg
 slug: 3D-e-Chem
 title: 3D-e-Chem NLeSC project
 urls:
   avatar: https://avatars.githubusercontent.com/u/14940717?v=3
-  nlesc: https://www.esciencecenter.nl/project/3d-e-chem
+  project: https://www.esciencecenter.nl/project/3d-e-chem
   organization: https://github.com/3D-e-Chem
-  repos: https://api.github.com/orgs/3D-e-Chem/repos
 keep_files:
   - updates
 collections:

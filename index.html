@@ -10,6 +10,15 @@ layout: default
 
 <p>Use <a href="/updates">https://3d-e-chem.github.io/updates</a> as update site to install 3D-e-Chem Knime plugins.</p>
 
+<ul>
+    {% if site.urls.project %}
+    <li><a href="{{ site.urls.project }}" title="Project"><span class="octicon octicon-home"></span>&nbsp;Project homepage</a></li>
+    {% endif %}
+    {% if site.urls.organization %}
+    <li><a href="{{ site.urls.organization }}" title="Github"><span class="octicon octicon-mark-github"></span>&nbsp;Github organization</a></li>
+    {% endif %}
+</ul>
+
 <h2>Repositories</h2>
 <div class="repositories">
 {% for repo in site.repos %}

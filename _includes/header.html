@@ -1,7 +1,6 @@
 <header class="site-header">
 
   <div class="wrapper">
-
     <div class="site-titles">
       <a class="site-title" href="{{ site.baseurl }}/">{{ site.title }}</a>
     </div>
@@ -21,6 +20,12 @@
           <a class="page-link" href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a>
           {% endif %}
         {% endfor %}
+        {% if site.urls.project %}
+        <a class="page-link" href="{{ site.urls.project }}" title="Project"><span class="mega-octicon octicon-home"></span></a>
+        {% endif %}
+        {% if site.urls.organization %}
+        <a class="page-link" href="{{ site.urls.organization }}" title="Github"><span class="mega-octicon octicon-mark-github"></span></a>
+        {% endif %}
       </div>
     </nav>
 
