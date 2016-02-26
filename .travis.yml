@@ -8,9 +8,11 @@ install:
   - ssh-add travis-ci.key
   - git config --global user.name "Travis-CI"
   - git config --global user.email "nobody@travis.ci.org"
+  # Re-attach HEAD
+  - git checkout $TRAVIS_BRANCH
 script:
   # TODO run stats update script
   - echo $TRAVIS_BUILD_NUMBER >> stats.json
 after_success:
-  - git commit --allow-empty -m "Updated stats by Travis-CI build $TRAVIS_BUILD_NUMBER"
-  - git push
+  - git commit -a --allow-empty -m "Updated stats by Travis-CI build $TRAVIS_BUILD_NUMBER"
+  - git push git@github.com:${TRAVIS_REPO_SLUG}.git $TRAVIS_BRANCH
