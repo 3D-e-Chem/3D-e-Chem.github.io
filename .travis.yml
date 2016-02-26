@@ -11,6 +11,6 @@ install:
 script:
   # TODO run stats update script
   - echo $TRAVIS_BUILD_NUMBER >> stats.json
-after_sucess:
+after_success:
   - git commit --allow-empty -m "Updated stats by Travis-CI build $TRAVIS_BUILD_NUMBER"
   - git push

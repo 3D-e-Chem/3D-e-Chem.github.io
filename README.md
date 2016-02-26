@@ -230,8 +230,11 @@ travis encrypt-file travis-ci.key
 
 Use the Travis-CI API to trigger a build (https://docs.travis-ci.com/user/triggering-builds).
 To Travis-CI API requires a token.
-This can be found on https://travis-ci.org/profile/ page.
-Click on the eye icon next to 'Token' to get your token.
+
+Token can be fetched using
+```
+travis token
+```
 
 Trigger build with
 ```
