@@ -38,9 +38,8 @@ def generate_config(organization, configfn):
         'created_at': org.created_at,
         'urls': {
           'avatar': org.avatar_url,
-          'repos': org.repos_url,
           'organization': org.html_url,
-          'nlesc': org.blog,
+          'project': org.blog,
         },
         'partners': [{
             'logo_url': 'https://www.esciencecenter.nl/img/pressroom/ESCIENCE_logo_C_nl_cyanblack.jpg',
