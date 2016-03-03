@@ -110,6 +110,10 @@
 .social-media-list {
     list-style: none;
     margin-left: 0;
+
+    .octicon {
+            vertical-align: baseline;
+    }
 }
 
 .footer-col-wrapper {
