@@ -10,17 +10,13 @@ layout: default
 
 <p>Use <a href="/updates">https://3d-e-chem.github.io/updates</a> as update site to install 3D-e-Chem Knime plugins.</p>
 
-<h2>Repositories</h2>
-<div class="repositories">
-{% for repo in site.repos %}
-<div class="repo-card">
-    <a href="{{ repo.homepage }}">
-        <h2 class="mdl-card__title-text">{{ repo.title }}</h2>
-        <h3>{{ repo.language }}</h3>
-        <p>{{ repo.content }}</p>
-    </a>
-</div>
-{% endfor %}
-</div>
-</div>
+{% include repositories.html %}
 
+{% include publications.html %}
+
+<h1><a href="material"></a>Material</h1>
+
+    <!--
+    Place to add presentations, videos, screencasts, posters etc.
+    -->
+</div>

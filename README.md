@@ -25,6 +25,15 @@ python utils/generate.py repos <organization name>
 
 This will generate a Markdown file in `_repos` directory for each public repo found in the organization.
 
+## Publications
+
+The list of doi's in `_data/dois.yml` can be converted to a publication list `_includes/publications.html` by
+```
+python utils/generate.py publications
+```
+
+The default citation style is `apa`.
+
 # Local hosting
 
 ```
