@@ -137,9 +137,10 @@ def generate_publications(style, dois_fn, publications_fn):
 
     print(header, file=publications_fn)
 
-    for doi in dois:
-        publication = generate_publication(doi, style)
-        print(publication, file=publications_fn)
+    if dois is not None:
+        for doi in dois:
+            publication = generate_publication(doi, style)
+            print(publication, file=publications_fn)
 
     print('</ul>', file=publications_fn)
 
