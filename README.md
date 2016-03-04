@@ -4,6 +4,7 @@
 - [Generate files](#generate-files)
 	- [Config](#config)
 	- [Repositories](#repositories)
+	- [Publications](#publications)
 - [Local hosting](#local-hosting)
 - [Automatic update setup](#automatic-update-setup)
 	- [Setup Travis-CI](#setup-travis-ci)
