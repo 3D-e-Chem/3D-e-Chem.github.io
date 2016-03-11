@@ -1,23 +1,19 @@
 ---
 layout: default
 ---
+<h2><span class="mega-octicon octicon-radio-tower"></span>&nbsp;News</h2>
 
-<div class="home">
+<ul class="post-list">
+  {% for post in site.posts %}
+    <li>
+      <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
 
-  <h1 class="page-heading">News</h1>
+      <h2>
+        <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+      </h2>
+    </li>
+  {% endfor %}
+</ul>
 
-  <ul class="post-list">
-    {% for post in site.posts %}
-      <li>
-        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
+<a href="{{ "/feed.xml" | prepend: site.baseurl }}" title="Subscribe via rss"><span class="octicon octicon-rss"></span></a>
 
-        <h2>
-          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-        </h2>
-      </li>
-    {% endfor %}
-  </ul>
-
-  <a href="{{ "/feed.xml" | prepend: site.baseurl }}" title="Subscribe via rss"><span class="octicon octicon-rss"></span></a>
-
-</div>
