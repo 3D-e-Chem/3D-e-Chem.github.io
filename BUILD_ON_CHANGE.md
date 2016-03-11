@@ -1,7 +1,13 @@
+# On change update setup
+
+Inspiration for the website is http://twitter.github.io/ or http://hadley.github.io/.
+Problem with those websites is they use the Github API anonymously.  Which is limited to 60 requests an hour.
+
+A solution to this is to perform builds when a repo of the Github organization changes.
+
 Note: Below was never completly tested.
 
 TODO try zapier instead of ifttt.
-
 
 1. Use Github webhooks in repositories to trigger when something changes.
 2. Webhook urls are listened on a IFTT recipe using it's Maker channel (https://github.com/captn3m0/ifttt-webhook)
