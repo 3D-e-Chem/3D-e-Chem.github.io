@@ -1,11 +1,9 @@
 baseurl: ''
 created_at: 2015-10-02 12:46:14+00:00
-description: Software repositories for 3D-e-Chem project of Netherlands eScience Center
+description: Output of 3D-e-Chem project
 excludes:
-- README.md
-- utils
-keep_files:
-- assets
+  - README.md
+  - utils
 markdown: kramdown
 partners:
   - logo_url: https://www.esciencecenter.nl/img/pressroom/ESCIENCE_logo_C_nl_cyanblack.jpg
@@ -23,6 +21,7 @@ urls:
   project: https://www.esciencecenter.nl/project/3d-e-chem
   organization: https://github.com/3D-e-Chem
 keep_files:
+  - assets
   - updates
 collections:
   repos:
