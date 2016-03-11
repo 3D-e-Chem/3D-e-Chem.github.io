@@ -326,8 +326,18 @@
     color: $grey-color;
 }
 
-.octicon {
-    vertical-align: text-top;
+.octicon, .mega-octicon {
+    vertical-align: middle;
+    text-align: center;
+    width: 16px;
+}
+.mega-octicon {
+    width: 32px;
+}
+
+.octitext {
+    padding-left: 4px;
+    vertical-align: middle;
 }
 
 .team-member-photo {

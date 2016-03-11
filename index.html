@@ -7,13 +7,23 @@ layout: default
 
 <p>To install 3D-e-Chem Knime plugins use <a href="/updates">https://3d-e-chem.github.io/updates</a> as update site.</p>
 
+<ul>
+    {% if site.urls.project %}
+    <li><a href="{{ site.urls.project }}"><span class="octicon octicon-home"></span><span class="octitext">Project homepage</span></a></li>
+    {% endif %}
+    {% if site.urls.organization %}
+    <li><a href="{{ site.urls.organization }}"><span class="octicon octicon-mark-github"></span><span class="octitext">Github organization</span></a></li>
+    {% endif %}
+    <li><a href="{{ 'team.html' | prepend: site.baseurl }}"><span class="octicon octicon-organization"></span><span class="octitext">Team</span></a></li>
+</ul>
+
 {% include latestnews.html %}
 
 {% include repositories.html %}
 
 {% include publications.html %}
 
-<h2><a name="dissemination"></a><span class="mega-octicon octicon-briefcase"></span>&nbsp;Dissemination</h2>
+<h2><a name="dissemination"></a><span class="mega-octicon octicon-briefcase"></span><span class="octitext">Dissemination</span></h2>
 
 <h3>Posters</h3>
 <ul>
