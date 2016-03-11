@@ -10,12 +10,6 @@
 
 <!-- /TOC -->
 
-TODO 
-1. Replace akkurat font with 
-@import url(https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300);
-font-family: 'Open Sans Condensed', sans-serif;
-
-
 # Project software site
 
 Website listing the software and other output used/made/changed in this NLeSC project.

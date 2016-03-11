@@ -1,6 +1,6 @@
 baseurl: ''
 created_at: 2015-10-02 12:46:14+00:00
-description: Output of 3D-e-Chem project
+description: 3D-e-Chem project of Netherlands eScience Center
 excludes:
   - README.md
   - utils
