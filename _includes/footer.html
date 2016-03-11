@@ -4,16 +4,10 @@
 
     <div class="footer-col-wrapper">
       <div class="footer-col  footer-col-1">
+        <div class="menu-links">
+        {% include menuitems.html %}
+        </div>
         <ul class="contact-list">
-          {% if site.urls.project %}
-          <li><a href="{{ site.urls.project }}" title="Project"><span class="octicon octicon-home"></span>&nbsp;Project homepage</a></li>
-          {% endif %}
-          {% if site.urls.organization %}
-          <li><a href="{{ site.urls.organization }}" title="Github"><span class="octicon octicon-mark-github"></span>&nbsp;Github organization</a></li>
-          {% endif %}
-          <li><a href="{{ '#repositories' | prepend: site.baseurl }}" title="Repositories"><span class="octicon octicon-repo"></span>&nbsp;Repositories</a></li>
-          <li><a href="{{ '#publications' | prepend: site.baseurl }}" title="Publications"><span class="octicon octicon-book"></span>&nbsp;Publications</a></li>
-          <li><a href="{{ '#dissemination' | prepend: site.baseurl }}" title="Dissemination"><span class="octicon octicon-briefcase"></span>&nbsp;Dissemination</a></li>
           <li><a href="mailto:{{ site.email }}">{{ site.email }}</a></li>
         </ul>
       </div>

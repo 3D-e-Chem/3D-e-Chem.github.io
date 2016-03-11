@@ -15,20 +15,7 @@
       </a>
 
       <div class="trigger">
-        {% for page in site.pages %}
-          {% if page.title %}
-          <a class="page-link" href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a>
-          {% endif %}
-        {% endfor %}
-        {% if site.urls.project %}
-        <a class="page-link" href="{{ site.urls.project }}" title="Project"><span class="mega-octicon octicon-home"></span></a>
-        {% endif %}
-        {% if site.urls.organization %}
-        <a class="page-link" href="{{ site.urls.organization }}" title="Github"><span class="mega-octicon octicon-mark-github"></span></a>
-        {% endif %}
-        <a class="page-link" href="{{ '#repositories' | prepend: site.baseurl }}" title="Repositories"><span class="mega-octicon octicon-repo"></span></a>
-        <a class="page-link" href="{{ '#publications' | prepend: site.baseurl }}" title="Publications"><span class="mega-octicon octicon-book"></span></a>
-        <a class="page-link" href="{{ '#dissemination' | prepend: site.baseurl }}" title="Dissemination"><span class="mega-octicon octicon-briefcase"></span></a>
+        {% include menuitems.html %}
       </div>
     </nav>
 

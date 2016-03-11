@@ -26,68 +26,65 @@
 .site-nav {
     float: right;
     line-height: 56px;
-
-    .menu-icon {
-        display: none;
-    }
+    position: absolute;
+    top: 9px;
+    right: 30px;
+    background-color: $background-color;
+    border: 1px solid $grey-color-light;
+    border-radius: 5px;
+    text-align: right;
 
     .page-link {
+        display: block;
         color: $text-color;
         line-height: $base-line-height;
+        text-decoration: none;
+        text-align: left;
 
-        // Gaps between nav items, but not on the first one
-        &:not(:first-child) {
-            margin-left: 20px;
+         .octicon {
+            vertical-align: middle;
+            font-size: 24px;
+            width: 24px;
+            text-align: center;
         }
 
-        .mega-octicon {
-            vertical-align: middle;
+        p {
+            display: inline;
+        }
+
+        &:hover {
+            background: darken($background-color, 1%);
         }
     }
 
+    .menu-icon {
+        display: block;
+        float: right;
+        width: 36px;
+        height: 26px;
+        line-height: 0;
+        padding-top: 10px;
+        text-align: center;
 
-    @include media-query($on-palm) {
-        position: absolute;
-        top: 9px;
-        right: 30px;
-        background-color: $background-color;
-        border: 1px solid $grey-color-light;
-        border-radius: 5px;
-        text-align: right;
+        > svg {
+            width: 18px;
+            height: 15px;
 
-        .menu-icon {
-            display: block;
-            float: right;
-            width: 36px;
-            height: 26px;
-            line-height: 0;
-            padding-top: 10px;
-            text-align: center;
-
-            > svg {
-                width: 18px;
-                height: 15px;
-
-                path {
-                    fill: $grey-color-dark;
-                }
+            path {
+                fill: $grey-color-dark;
             }
         }
+    }
 
-        .trigger {
-            clear: both;
-            display: none;
-        }
+    .trigger {
+        clear: both;
+        display: none;
+        margin: 0px 3px 0px 3px;
+    }
 
-        &:hover .trigger {
-            display: block;
-            padding-bottom: 5px;
-        }
-
-        .page-link {
-            display: block;
-            padding: 5px 10px;
-        }
+    &:hover .trigger {
+        display: block;
+        padding-bottom: 5px;
     }
 }
 
@@ -107,12 +104,26 @@
 }
 
 .contact-list,
-.social-media-list {
+.social-media-list,
+.menu-links {
     list-style: none;
     margin-left: 0;
 
     .octicon {
             vertical-align: baseline;
+    }
+}
+
+.menu-links {
+    display: block;
+
+    .page-link {
+        color: $grey-color;
+        display: block;
+
+        p {
+            display: inline;
+        }
     }
 }
 
