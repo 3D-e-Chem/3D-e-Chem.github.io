@@ -27,9 +27,17 @@ keep_files:
 collections:
   repos:
     output: false
+  team_members:
+    output: true
+    permalink: /team/:path/
 defaults:
   - scope:
       path: ""
       type: posts
     values:
       layout: post
+  - scope:
+      path: ""
+      type: team_members
+    values:
+      layout: team

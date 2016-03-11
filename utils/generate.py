@@ -61,6 +61,10 @@ def generate_config(organization, configfn):
             'repos': {
                 'output': False
             },
+            'team_members': {
+                'output': True,
+                'permalink': '/team/:path'
+            }
         },
         'defaults': [{
             'scope': {
@@ -70,6 +74,13 @@ def generate_config(organization, configfn):
             'values': {
                 'layout': 'post'
             },
+            'scope': {
+                'path': '',
+                'type': 'team_members'
+            },
+            'values': {
+                'layout': 'team'
+            }
         }]
     }
 

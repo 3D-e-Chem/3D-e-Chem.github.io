@@ -1,0 +1,13 @@
+<h2><a name="team"></a><span class="mega-octicon octicon-organization"/>&nbsp;Team</h2>
+
+<div class="team-members">
+{% for member in site.team_members %}
+<div class="team-member-card">
+    <a href="{{ member.url }}">
+        <img src="{{ member.photo }}"/>
+        <h3>{{ member.title }}</h3>
+        <h4>{{ member.role }}</h4>
+    </a>
+</div>
+{% endfor %}
+</div>

@@ -10,6 +10,12 @@
 
 <!-- /TOC -->
 
+TODO 
+1. Replace akkurat font with 
+@import url(https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300);
+font-family: 'Open Sans Condensed', sans-serif;
+
+
 # Project software site
 
 Website listing the software and other output used/made/changed in this NLeSC project.
@@ -58,6 +64,21 @@ title: New version of software X
 ```
 
 See https://jekyllrb.com/docs/posts/ for more information.
+
+# Team members
+
+The team members of the project can be displayed on this website.
+
+To add a new member create a biography file in `_team_members/` directory where the filename should be the person name.
+The following front matter should be used.
+```
+---
+title: <Name of person>
+photo: <Url of photo of person, eg. /assets/team_members/name_of_person.jpg>
+role: <Role of person>
+---
+```
+A photo of the person should be added to the `assets/team_members/` directory with the same name as the biography.
 
 # Local hosting
 
