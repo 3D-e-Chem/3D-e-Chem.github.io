@@ -3,11 +3,10 @@
 {% for repo in site.repos %}
 <div class="repo-card">
     <a href="{{ repo.homepage }}">
-        <h2 class="mdl-card__title-text">{{ repo.title }}</h2>
+        <h2>{{ repo.title }}</h2>
         <h3>{{ repo.language }}</h3>
         <p>{{ repo.content }}</p>
     </a>
 </div>
 {% endfor %}
-</div>
 </div>
