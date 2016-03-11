@@ -54,9 +54,23 @@ def generate_config(organization, configfn):
             'utils',
         ],
         'keep_files': [
+            'assets',
             '<FIXME files directories Jekyll should not alter>'
         ],
-        'collections': ['repos']
+        'collections': {
+            'repos': {
+                'output': False
+            },
+        },
+        'defaults': [{
+            'scope': {
+                'path': '',
+                'type': 'posts'
+            },
+            'values': {
+                'layout': 'post'
+            },
+        }]
     }
 
     yaml.dump(config, configfn, default_flow_style=False)

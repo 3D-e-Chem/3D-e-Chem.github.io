@@ -25,4 +25,11 @@ urls:
 keep_files:
   - updates
 collections:
-  - repos
+  repos:
+    output: false
+defaults:
+  - scope:
+      path: ""
+      type: posts
+    values:
+      layout: post

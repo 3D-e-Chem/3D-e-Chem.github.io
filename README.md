@@ -46,11 +46,26 @@ python utils/generate.py publications
 
 The default citation style is `apa`.
 
+# News items
+
+Creating news item can be done by creating a Markdown file in the `_posts` directory.
+
+The files should be called `YEAR-MONTH-DAY-title.md` and contain the following front matter.
+```
+---
+title: New version of software X
+---
+```
+
+See https://jekyllrb.com/docs/posts/ for more information.
+
 # Local hosting
 
 ```
 docker run --rm --volume=$(pwd):/srv/jekyll -i -t  -p 127.0.0.1:4000:4000 jekyll/jekyll:pages
 ```
+
+The website can be viewed at http://localhost:4000
 
 # Update website automatically
 
