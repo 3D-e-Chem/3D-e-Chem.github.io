@@ -1,25 +1,13 @@
 ---
 layout: default
 ---
-
-<div class="home">
-
 <p>This project will develop technologies to improve the integration of ligand and protein data for structure-based prediction of protein-ligand selectivity and polypharmacology.</p>
 
 <p>The project will use <a href="http://www.knime.org">Knime Analytics Platform</a> to integrate the different technologies and datasets.</p>
 
 <p>To install 3D-e-Chem Knime plugins use <a href="/updates">https://3d-e-chem.github.io/updates</a> as update site.</p>
 
-<ul>
-    <li><a href="{{ site.url }}news.html" title="News"><span class="octicon octicon-radio-tower"></span>&nbsp;News</a></li>
-    <li><a href="{{ site.url }}team.html" title="Team"><span class="octicon octicon-organization"></span>&nbsp;Team</a></li>
-    {% if site.urls.project %}
-    <li><a href="{{ site.urls.project }}" title="Project"><span class="octicon octicon-home"></span>&nbsp;Project homepage</a></li>
-    {% endif %}
-    {% if site.urls.organization %}
-    <li><a href="{{ site.urls.organization }}" title="Github"><span class="octicon octicon-mark-github"></span>&nbsp;Github organization</a></li>
-    {% endif %}
-</ul>
+{% include latestnews.html %}
 
 {% include repositories.html %}
 

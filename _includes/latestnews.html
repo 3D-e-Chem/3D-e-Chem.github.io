@@ -1,7 +1,7 @@
-<h1 class="page-heading">News</h1>
+<h2><span class="mega-octicon octicon-radio-tower"></span>&nbsp;Latest news</h2>
 
 <ul class="post-list">
-{% for post in site.posts limit:5 %}
+{% for post in site.posts limit:1 %}
   <li>
     <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
 
@@ -11,3 +11,5 @@
   </li>
 {% endfor %}
 </ul>
+
+<a href="{{ site.url }}news.html" title="Read more">read more</a>
