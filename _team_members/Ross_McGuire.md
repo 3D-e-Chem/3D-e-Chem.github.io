@@ -1,7 +1,7 @@
 ---
 title: Ross McGuire
 photo: /assets/team_members/Ross_McGuire.jpg
-role: 3D-e-Chem KNIME platform development
+role: Development 3D-e-Chem KNIME platform
 ---
 Ross McGuire has a background in synthetic organic chemistry gaining a PhD on novel heterocyclization reactions at the University of Edinburgh.
 He has worked for Rhône-Poulenc in England and France, as well as for Organon in Scotland and the Netherlands as a computational chemist in multiple drug discovery projects in a variety of therapeutic areas, including CNS, CV, Neuromuscular Relaxation drugs and their reversal agents. 
