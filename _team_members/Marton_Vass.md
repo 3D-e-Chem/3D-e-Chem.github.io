@@ -1,10 +1,8 @@
 ---
-title: Marton Vass
+title: Márton Vass
 photo: /assets/team_members/Marton_Vass.jpg
 role: Development and application 3D-e-Chem chemoinformatics tools
 ---
-Márton Vass performed his Ph.D. research at the Budapest University of Technology and Economics on In silico methodologies aiding fragment-based drug discovery (Supervisor: Dr. György Miklós Keserű).
-Marton has experience in drug discovery as research scientist Lead Discovery Laboratory (CADD team), Gedeon Richter Plc.
-In 2015, Marton Vass started a post-doctoral fellowship in the Division Medicinal Chemistry at VU University Amsterdam on the 3D-e-Chem project.
+Márton Vass acquired his Ph.D. degree at the Budapest University of Technology and Economics on In silico methodologies aiding fragment-based drug discovery in 2014. Márton has experience in drug discovery as research scientist in the Lead Discovery Laboratory (CADD team) of Gedeon Richter Plc. a mid-sized pharmaceutical R&D company in Budapest where he was responsible for the computational support of medicinal chemistry projects mainly in the CNS field (2011-2015). He also won the Richter Innovation Award in 2014 for the deployment of an online platform incorporating computational models to be used by medicinal chemists and the Richter Publication Award. In 2015, Márton Vass started a post-doctoral fellowship in the Division Medicinal Chemistry at VU University Amsterdam on the 3D-e-Chem project.
 
-In the 3D-e-Chem project Marton Vass is involved in the development and application chemoinformatics tools
+In the 3D-e-Chem project Márton Vass is involved in the development and application of cheminformatics tools and workflows.
