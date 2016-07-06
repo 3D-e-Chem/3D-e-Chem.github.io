@@ -19,6 +19,7 @@ import argparse
 from datetime import datetime
 import logging
 from os import mkdir
+from os.path import isfile
 from string import Template
 import urllib2
 
@@ -128,6 +129,9 @@ def generate_repos(organization):
             # skip self
             continue
         repo_fn = '{}/{}.md'.format(repos_dir, repo.name)
+        if isfile(repo_fn):
+            # Don't overwrite
+            continue
         generate_repo(repo, repo_fn)
 
 
