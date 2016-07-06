@@ -1,9 +1,8 @@
 ---
 title: knime-kripodb
-language: None
-license: Apache License 2.0
+language: Java
+license: GNU General Public License v3.0
 homepage: https://github.com/3D-e-Chem/knime-kripodb
 github: https://github.com/3D-e-Chem/knime-kripodb
 ---
-Knime Python templates for KripoDB package
-    
+KNIME nodes for KripoDB Python package
