@@ -1,5 +1,5 @@
 ---
-title: KNIME workflows
+title: workflows
 language: KNIME
 license: Apache License 2.0
 homepage: https://github.com/3D-e-Chem/workflows
