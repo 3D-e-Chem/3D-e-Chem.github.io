@@ -36,6 +36,7 @@ def generate_config(organization, configfn):
         'slug': org.login,
         'description': org._json_data['description'],
         'baseurl': '',
+	'project_logo': '/assets/logo/3D-e-Chem_logo_small.png',
         'created_at': org.created_at,
         'urls': {
           'avatar': org.avatar_url,
