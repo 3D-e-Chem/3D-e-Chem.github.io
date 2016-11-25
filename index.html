@@ -14,9 +14,12 @@ layout: default
     {% if site.urls.organization %}
     <li><a href="{{ site.urls.organization }}"><span class="octicon octicon-mark-github"></span><span class="octitext">Github organization</span></a></li>
     {% endif %}
+    <li><a href="{{ 'news.html' | prepend: site.baseurl }}"><span class="octicon octicon-radio-tower"></span><span class="octitext">News</span></a></li>
     <li><a href="{{ 'team.html' | prepend: site.baseurl }}"><span class="octicon octicon-organization"></span><span class="octitext">Team</span></a></li>
-    <li><a href="#publ"><span class="octicon octicon-book"></span><span class="octitext">Publications</span></a></li>
-    <li><a href="#data"><span class="octicon octicon-file-binary"></span><span class="octitext">Data sets</span></a></li>
+    <li><a href="{{ '/#repositories' | prepend: site.baseurl }}"><span class="octicon octicon-repo"></span><span class="octitext">Repositories</span></a></li>
+    <li><a href="{{ '/#publications' | prepend: site.baseurl }}"><span class="octicon octicon-book"></span><span class="octitext">Publications</span></a></li>
+    <li><a href="{{ '/#data' | prepend: site.baseurl }}"><span class="octicon octicon-file-binary"></span><span class="octitext">Data sets</span></a></li>
+    <li><a href="{{ '/#dissemination' | prepend: site.baseurl }}"><span class="octicon octicon-briefcase"></span><span class="octitext">Dissemination</span></a></li>
 </ul>
 
 <p>3D-e-Chem partners and collaborators:</p>
@@ -36,7 +39,6 @@ layout: default
 {% include repositories.html %}
 
 <p></p>
-<a name="publ">
 {% include publications.html %}
 
 <p></p>
