@@ -77,7 +77,7 @@ A photo of the person should be added to the `assets/team_members/` directory wi
 # Local hosting
 
 ```
-docker run --rm --volume=$(pwd):/srv/jekyll -i -t  -p 127.0.0.1:4000:4000 jekyll/jekyll:pages
+docker run --rm --volume=$(pwd):/srv/jekyll -i -t  -p 127.0.0.1:4000:4000 jekyll/jekyll:pages jekyll serve
 ```
 
 The website can be viewed at http://localhost:4000
