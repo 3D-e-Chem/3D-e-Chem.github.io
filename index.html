@@ -1,36 +1,89 @@
----
-layout: default
----
-<p>This project will develop technologies to improve the integration of ligand and protein data for structure-based prediction of protein-ligand selectivity and polypharmacology.</p>
+--- layout: default ---
+<p>This project will develop technologies to improve the integration of ligand and protein data for structure-based prediction
+    of protein-ligand selectivity and polypharmacology.</p>
 
-<p>The project will use <a href="http://www.knime.org">KNIME Analytics Platform</a> to integrate the different technologies and datasets.</p>
+<p>The project will use
+    <a href="http://www.knime.org">KNIME Analytics Platform</a> to integrate the different technologies and datasets.</p>
 
-<p>To install 3D-e-Chem KNIME nodes use <a href="/knime-node-collection">https://3d-e-chem.github.io/knime-node-collection</a> as update site.</p>
+<p>To install
+    <a href="https://www.knime.com/3d-e-chem-nodes-for-knime">3D-e-Chem KNIME nodes</a> use the stable community contributions or
+    <a href="/knime-node-collection">https://3d-e-chem.github.io/knime-node-collection</a> as software site.</p>
 
 <ul>
     {% if site.urls.project %}
-    <li><a href="{{ site.urls.project }}"><span class="octicon octicon-home"></span><span class="octitext">Project homepage</span></a></li>
+    <li>
+        <a href="{{ site.urls.project }}">
+            <span class="octicon octicon-home"></span>
+            <span class="octitext">Project homepage</span>
+        </a>
+    </li>
+    {% endif %} {% if site.urls.organization %}
+    <li>
+        <a href="{{ site.urls.organization }}">
+            <span class="octicon octicon-mark-github"></span>
+            <span class="octitext">Github organization</span>
+        </a>
+    </li>
     {% endif %}
-    {% if site.urls.organization %}
-    <li><a href="{{ site.urls.organization }}"><span class="octicon octicon-mark-github"></span><span class="octitext">Github organization</span></a></li>
-    {% endif %}
-    <li><a href="{{ 'news.html' | prepend: site.baseurl }}"><span class="octicon octicon-radio-tower"></span><span class="octitext">News</span></a></li>
-    <li><a href="{{ 'team.html' | prepend: site.baseurl }}"><span class="octicon octicon-organization"></span><span class="octitext">Team</span></a></li>
-    <li><a href="{{ '/#repositories' | prepend: site.baseurl }}"><span class="octicon octicon-repo"></span><span class="octitext">Repositories</span></a></li>
-    <li><a href="{{ '/#publications' | prepend: site.baseurl }}"><span class="octicon octicon-book"></span><span class="octitext">Publications</span></a></li>
-    <li><a href="{{ '/#data' | prepend: site.baseurl }}"><span class="octicon octicon-file-binary"></span><span class="octitext">Data sets</span></a></li>
-    <li><a href="{{ '/#dissemination' | prepend: site.baseurl }}"><span class="octicon octicon-briefcase"></span><span class="octitext">Dissemination</span></a></li>
+    <li>
+        <a href="{{ 'news.html' | prepend: site.baseurl }}">
+            <span class="octicon octicon-radio-tower"></span>
+            <span class="octitext">News</span>
+        </a>
+    </li>
+    <li>
+        <a href="{{ 'team.html' | prepend: site.baseurl }}">
+            <span class="octicon octicon-organization"></span>
+            <span class="octitext">Team</span>
+        </a>
+    </li>
+    <li>
+        <a href="{{ '/#repositories' | prepend: site.baseurl }}">
+            <span class="octicon octicon-repo"></span>
+            <span class="octitext">Repositories</span>
+        </a>
+    </li>
+    <li>
+        <a href="{{ '/#publications' | prepend: site.baseurl }}">
+            <span class="octicon octicon-book"></span>
+            <span class="octitext">Publications</span>
+        </a>
+    </li>
+    <li>
+        <a href="{{ '/#data' | prepend: site.baseurl }}">
+            <span class="octicon octicon-file-binary"></span>
+            <span class="octitext">Data sets</span>
+        </a>
+    </li>
+    <li>
+        <a href="{{ '/#dissemination' | prepend: site.baseurl }}">
+            <span class="octicon octicon-briefcase"></span>
+            <span class="octitext">Dissemination</span>
+        </a>
+    </li>
 </ul>
 
 <p>3D-e-Chem partners and collaborators:</p>
 
 <ul>
-    <li><a href="http://www.chem.vu.nl/en/research/division-of-medicinal-chemistry/">VU Medicinal Chemistry</a></li>
-    <li><a href="http://www2.cmbi.ru.nl/">CMBI Radboud University</a></li>
-    <li><a href="https://www.esciencecenter.nl/">Netherlands eScience Center</a></li>
-    <li><a href="http://gpcrconsortium.org/">GPCR Consortium</a></li>
-    <li><a href="http://gpcrdb.org/">GPCRdb</a></li>
-    <li><a href="http://www.oncornet.eu/">ONCORNET</a></li>
+    <li>
+        <a href="http://www.chem.vu.nl/en/research/division-of-medicinal-chemistry/">VU Medicinal Chemistry</a>
+    </li>
+    <li>
+        <a href="http://www2.cmbi.ru.nl/">CMBI Radboud University</a>
+    </li>
+    <li>
+        <a href="https://www.esciencecenter.nl/">Netherlands eScience Center</a>
+    </li>
+    <li>
+        <a href="http://gpcrconsortium.org/">GPCR Consortium</a>
+    </li>
+    <li>
+        <a href="http://gpcrdb.org/">GPCRdb</a>
+    </li>
+    <li>
+        <a href="http://www.oncornet.eu/">ONCORNET</a>
+    </li>
 </ul>
 
 {% include latestnews.html %}
@@ -42,35 +95,64 @@ layout: default
 {% include publications.html %}
 
 <p></p>
-<h2><a name="data"></a><span class="mega-octicon octicon-file-binary"></span><span class="octitext">Data sets</span></h2>
+<h2>
+    <a name="data"></a>
+    <span class="mega-octicon octicon-file-binary"></span>
+    <span class="octitext">Data sets</span>
+</h2>
 
 <ul>
-<li> Vass, Marton, Podlewska, Sabina, Kooistra, Albert, Kuhne, Sebastiaan, Racz, Anita, Leurs, Rob, de Esch, Iwan, Bojarski, Andrzej, de Graaf, Chris. (2016). Aminergic G protein-coupled receptor (GPCR) mutation data set. Zenodo. <a href="http://doi.org/10.5281/zenodo.58104">http://doi.org/10.5281/zenodo.58104</a></li>
-<li> Arimont, Marta, Sun, Shanliang, Vass, Marton, Smit, Martine, Leurs, Rob, de Esch, Iwan, de Graaf, Chris. (2016). Chemokine G protein-coupled receptor (GPCR) mutation data set. Zenodo. <a href="http://doi.org/10.5281/zenodo.58160">http://doi.org/10.5281/zenodo.58160</a></li>
+    <li> Vass, Marton, Podlewska, Sabina, Kooistra, Albert, Kuhne, Sebastiaan, Racz, Anita, Leurs, Rob, de Esch, Iwan, Bojarski,
+        Andrzej, de Graaf, Chris. (2016). Aminergic G protein-coupled receptor (GPCR) mutation data set. Zenodo.
+        <a href="http://doi.org/10.5281/zenodo.58104">http://doi.org/10.5281/zenodo.58104</a>
+    </li>
+    <li> Arimont, Marta, Sun, Shanliang, Vass, Marton, Smit, Martine, Leurs, Rob, de Esch, Iwan, de Graaf, Chris. (2016). Chemokine
+        G protein-coupled receptor (GPCR) mutation data set. Zenodo.
+        <a href="http://doi.org/10.5281/zenodo.58160">http://doi.org/10.5281/zenodo.58160</a>
+    </li>
 </ul>
 
 <p></p>
-<h2><a name="dissemination"></a><span class="mega-octicon octicon-briefcase"></span><span class="octitext">Dissemination</span></h2>
+<h2>
+    <a name="dissemination"></a>
+    <span class="mega-octicon octicon-briefcase"></span>
+    <span class="octitext">Dissemination</span>
+</h2>
 
 <h3>Tutorials</h3>
 
 <ul>
-    <li><a href="https://www.gitbook.com/book/3d-e-chem/tutorial/details">3D-e-Chem KNIME Nodes for Integrated Structural Cheminformatics Analyses and Computer-Aided Drug Discovery</a>
+    <li>
+        <a href="https://www.gitbook.com/book/3d-e-chem/tutorial/details">3D-e-Chem KNIME Nodes for Integrated Structural Cheminformatics Analyses and Computer-Aided Drug Discovery</a>
     </li>
 </ul>
 
 <h3>Posters</h3>
 <ul>
-<li>Verhoeven, Stefan, Vass, Marton, de Esch, Iwan, Leurs, Rob, Lusher, Scott, Vriend, Gerrit, Ritschel, Tina, de Graaf, Chris, McGuire, Ross. (2016). 3D-e-Chem VM: Cheminformatics Research Infrastructure in a Downloadable Virtual Machine. Zenodo. <a href="http://doi.org/10.5281/zenodo.47208">http://doi.org/10.5281/zenodo.47208</a>
-</li>
-<li>Vass, Marton, Verhoeven, Stefan, McGuire, Ross, Kooistra, Albert J., Ridder, Lars, Ritschel, Tina, de Esch, Iwan, Leurs, Rob, Vriend, Gerrit, de Graaf, Chris. (2016). 3D-e-Chem-VM: Cheminformatics Toolbox in a freely available Virtual Machine. Zenodo. <a href="http://doi.org/10.5281/zenodo.161567">http://doi.org/10.5281/zenodo.161567</a>
-</li>
+    <li>Verhoeven, Stefan, Vass, Marton, de Esch, Iwan, Leurs, Rob, Lusher, Scott, Vriend, Gerrit, Ritschel, Tina, de Graaf,
+        Chris, McGuire, Ross. (2016). 3D-e-Chem VM: Cheminformatics Research Infrastructure in a Downloadable Virtual Machine.
+        Zenodo.
+        <a href="http://doi.org/10.5281/zenodo.47208">http://doi.org/10.5281/zenodo.47208</a>
+    </li>
+    <li>Vass, Marton, Verhoeven, Stefan, McGuire, Ross, Kooistra, Albert J., Ridder, Lars, Ritschel, Tina, de Esch, Iwan, Leurs,
+        Rob, Vriend, Gerrit, de Graaf, Chris. (2016). 3D-e-Chem-VM: Cheminformatics Toolbox in a freely available Virtual
+        Machine. Zenodo.
+        <a href="http://doi.org/10.5281/zenodo.161567">http://doi.org/10.5281/zenodo.161567</a>
+    </li>
 </ul>
 
-<h2><a name="Links"></a><span class="mega-octicon octicon-link-external"></span><span class="octitext">Links</span></h2>
+<h2>
+    <a name="Links"></a>
+    <span class="mega-octicon octicon-link-external"></span>
+    <span class="octitext">Links</span>
+</h2>
 
 <ul>
-<li><a href="http://klifs.vu-compmedchem.nl">Kinase-Ligand Interaction Fingerprint and Structures database</a></li>
-<li><a href="http://pdestrian.vu-compmedchem.nl">PhosphoDiEsterase Structure and ligand Interaction Annotated database</a></li>
+    <li>
+        <a href="http://klifs.vu-compmedchem.nl">Kinase-Ligand Interaction Fingerprint and Structures database</a>
+    </li>
+    <li>
+        <a href="http://pdestrian.vu-compmedchem.nl">PhosphoDiEsterase Structure and ligand Interaction Annotated database</a>
+    </li>
 </ul>
 <!-- There are no presentations, videos, screencasts, poster, etc. yet. -->
